@@ -1,38 +1,116 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+body {
+  font-family:  "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+header {
+  background-color: #f0f2f5;
+  color: black;
   text-align: center;
+  padding: 20px 0;
+  display: flexbox;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_bar {
+  display: flex;
+  background-color:#f0f2f5 ;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right {
+  width: 45%;
+  display: flex;
+  align-content: start;
+  margin-left: 5%;
+  background-color: #f0f2f5;
+}
+.right h1{
+  background-color: #f0f2f5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left {
+  width: 45%;
+  display: flex;
+  align-items: end;
+  margin-left: 33%;
+  background-color: #f0f2f5;
+}
+
+.left p {
+  margin-right: 7%;
+  background-color: #f0f2f5;
+  font-size: larger;
+}
+.left button{
+  font-size: larger;
+  width: 23%;
+  height:83%;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #39E42A;
+  color: #fff;
+  font-weight: bolder;
+  margin: none;
+  border: #fff;
+}
+footer{
+  display: flex;
+  align-content: end;
+}
+.main{
+  width: 100%;
+
+}
+footer
+{
+  display: flex;
+  align-items: first baseline;
+}
+.centre
+{
+  width: 100%;
+  height: 39vh;
+  font: bold;
+  font-size: larger;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.svg{
+  display:flex;
+  align-content: baseline;
+  width: 100%;
+  height:50vh
+}
+.svg{
+width: 100%;
+}
+.svg img
+{
+  width: 100%;
+}
+.left button:active {
+          background-color: #2EA527; /* Change to your desired color */
+      }
+.left button:hover{
+  transform: scale(1.1);
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.left p:hover{
+  transform: scale(1.1);
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+} 
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
